@@ -1,0 +1,32 @@
+{
+  "name": "kevinmhkim.github.io",
+  "build": { "dockerfile": "Dockerfile" },
+  "runArgs": ["--network=host"],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.vscode-remote-extensionpack",
+        "esbenp.prettier-vscode",
+        "DavidAnson.vscode-markdownlint",
+        "dbaeumer.vscode-eslint",
+        "ms-azuretools.vscode-docker",
+        "bradlc.vscode-tailwindcss",
+        "YoavBls.pretty-ts-errors",
+        "github.vscode-github-actions"
+      ],
+      "settings": {
+        "files.insertFinalNewline": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
+        "files.associations": {
+          "*.css": "tailwindcss"
+        },
+        "editor.quickSuggestions": {
+          "strings": "on"
+        },
+        "typescript.preferences.importModuleSpecifier": "non-relative"
+      }
+    }
+  }
+}
